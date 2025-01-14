@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function ContactMe() {
     return (
-        <div id="contact" className="container md:flex md:justify-between md:items-center md:gap-4 my-16 scroll-mt-16">
+        <section data-aos="fade-right" id="contact" className="container md:flex md:justify-between md:items-center md:gap-4 my-16 scroll-mt-16">
 
             <div className="lg:w-[280px] lg:flex lg:flex-col">
                 <h1 className="h1 text-gradient">Contact me for collabortion</h1>
@@ -35,6 +35,6 @@ export default function ContactMe() {
                     <input type="submit" defaultValue={"Submit"} className="bg-sky-500 w-full p-2 rounded-md text-black cursor-pointer transition-colors border-[2px] border-sky-500 hover:bg-transparent hover:text-white" />
                 </form>
             </div>
-        </div>
+        </section>
     )
 }

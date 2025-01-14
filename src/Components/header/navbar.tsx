@@ -1,23 +1,31 @@
 import { useState } from "react"
 
+type Link = {
+    href: string
+    content: string
+    index: number
+}
 
-
-const navLinks: Record<string, string>[] = [
+const navLinks: Link[] = [
     {
         href: "#home",
-        content: "Home"
+        content: "Home",
+        index: 0,
     },
     {
         href: "#about",
-        content: "About"
+        content: "About",
+        index: 1,
     },
     {
         href: "#work",
-        content: "Work"
+        content: "Work",
+        index: 2,
     },
     {
         href: "#reviews",
-        content: "Reviews"
+        content: "Reviews",
+        index: 3,
     }
 ]
 
@@ -47,12 +55,12 @@ export default function Navbar() {
                 className="sm:block sm:relative px-1 py-1 rounded-md bg-zinc-900">
                 <div className="flex">
                     {
-                        navLinks.map((link, index) => {
+                        navLinks.map((link) => {
                             return (
-                                <li key={index}>
+                                <li key={link.index}>
                                     <a
-                                        data-active={acitveIndex == index ? "true" : "false"}
-                                        onClick={() => setActiveIndex(index)}
+                                        data-active={acitveIndex == link.index ? "true" : "false"}
+                                        onClick={() => setActiveIndex(link.index)}
                                         href={link.href}
                                         className="text-zinc-50/50 py-1.5 px-3 rounded-md font-medium text-sm block"
                                     >{link.content}</a>

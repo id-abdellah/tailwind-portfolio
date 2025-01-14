@@ -130,7 +130,7 @@ export default function Reviews() {
     }, [])
 
     return (
-        <div id="reviews" className="scroll-mt-16 my-16 max-sm:px-2">
+        <section data-aos="fade-up" id="reviews" className="scroll-mt-16 my-16 max-sm:px-2">
             <h1 className="h1 container text-gradient">What our customers say</h1>
 
             <div ref={scrollable} className="x-scrollbar snap-x snap-mandatory mt-2 px-1 overflow-auto flex gap-2 cursor-grabbing select-none">
@@ -158,6 +158,6 @@ export default function Reviews() {
                     })
                 }
             </div>
-        </div>
+        </section>
     )
 }

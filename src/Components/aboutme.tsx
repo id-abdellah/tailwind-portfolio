@@ -51,7 +51,7 @@ const techstack: tech[] = [
 
 export default function About() {
     return (
-        <div id="about" className="container my-16 scroll-mt-[60px]">
+        <section data-aos="fade-right" id="about" className="container my-16 scroll-mt-[60px]">
 
             <div className="container bg-zinc-50/10 p-6 sm:rounded-lg">
                 <p className="text-sm text-center text-balance text-zinc-200 lg:w-[80%] lg:text-start">
@@ -97,6 +97,6 @@ export default function About() {
                     }
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
