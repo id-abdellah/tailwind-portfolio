@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        overflow-x: hidden;
+        @apply text-white bg-zinc-800;
+
+        &::-webkit-scrollbar {
+            width: 4px;
+            border-radius: 50px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            @apply bg-sky-500;
+            border-radius: 50px;
+        }
+    }
+}
+
+
+/* popover */
+
+#linksPopoverOpener {
+    anchor-name: --popover-opener;
+
+    // make X sign with spans when popover is open
+
+    &[data-isopen="true"] {
+        position: relative;
+
+        span:nth-child(1),
+        span:nth-child(3) {
+            position: absolute;
+            width: 20px;
+        }
+
+        span:nth-child(2) {
+            opacity: 0;
+        }
+
+        span:nth-child(1) {
+            rotate: 45deg;
+        }
+
+        span:nth-child(3) {
+            rotate: -45deg;
+        }
+
+    }
+}
+
+#linksPopover {
+    position-anchor: --popover-opener;
+    inset: auto;
+
+    &:popover-open {
+        top: anchor(bottom);
+        right: anchor(right);
+        margin-top: 4px;
+        width: 130px;
+
+        >div {
+            display: block;
+        }
+    }
+}
+
+/* ------ */
+
+
+
+
+
+/* Utilitites */
+
+.text-gradient {
+    @apply bg-gradient-to-r from-white to-zinc-500 bg-clip-text text-transparent;
+}
+
+.h1 {
+    @apply text-2xl font-bold sm:text-3xl
+}
+
+.x-scrollbar {
+    padding-bottom: 8px;
+
+    &::-webkit-scrollbar {
+        height: 4px;
+        border-radius: 50px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        @apply bg-sky-500;
+        border-radius: 50px;
+    }
+}
+
+
+[data-active="true"] {
+    @apply bg-white text-zinc-900
+}
