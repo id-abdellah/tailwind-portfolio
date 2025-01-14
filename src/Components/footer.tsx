@@ -34,7 +34,7 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className="mt-16 flex items-center justify-between">
+            <div className="mt-16 mb-6 flex items-center justify-between">
                 <div className="">
                     <a href="">
                         <span className="text-sky-400 font-extrabold text-xl">Obito</span>
