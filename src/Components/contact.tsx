@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function ContactMe() {
     return (
-        <section data-aos="fade-right" id="contact" className="container md:flex md:justify-between md:items-center md:gap-4 my-16 scroll-mt-16">
+        <section id="contact" className="container md:flex md:justify-between md:items-center md:gap-4 my-16 scroll-mt-16">
 
             <div className="lg:w-[280px] lg:flex lg:flex-col">
                 <h1 className="h1 text-gradient">Contact me for collabortion</h1>

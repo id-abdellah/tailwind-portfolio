@@ -19,8 +19,13 @@
             border-radius: 50px;
         }
     }
+
 }
 
+[data-aos] {
+    position: relative;
+    overflow: hidden;
+}
 
 /* popover */
 

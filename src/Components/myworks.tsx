@@ -42,7 +42,7 @@ const projects: Projects[] = [
 
 export default function MyWorks() {
     return (
-        <section data-aos="fade-left" id="work" className="container my-16 scroll-mt-16">
+        <section id="work" className="container my-16 scroll-mt-16">
             <h1 className="h1 text-gradient text-balance"> My Portfolio Highlights</h1>
 
             <div className="mt-4 gap-2 sm:grid sm:grid-cols-2 md:grid-cols-3 
